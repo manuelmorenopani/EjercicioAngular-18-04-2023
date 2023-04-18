@@ -1,0 +1,18 @@
+<p>Lista de pedidos</p>
+<app-componente2-hijopedidos (enviardatos)="anadirpedido($event)"></app-componente2-hijopedidos>
+ <table>
+    <tr>
+        <td>Idpedido</td>
+        <td>Idcliente</td>
+        <td>nombre</td>
+        <td>totalproductos</td>
+        <td>importetotal</td>
+    </tr>
+    <tr *ngFor="let pedido of pedidos">
+        <td>{{pedido.idpedido}}</td>
+        <td>{{pedido.idcliente}}</td>
+        <td>{{pedido.nombre}}</td>
+        <td>{{pedido.totalproductos}}</td>
+        <td>{{pedido.importetotal}}</td>
+    </tr>
+</table>

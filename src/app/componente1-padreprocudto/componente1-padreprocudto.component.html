@@ -1,0 +1,20 @@
+<label for="marca">Id: </label>
+<input type="number" name="marca" [(ngModel)]="producto.id"><br>
+<label for="color">Nombre: </label>
+<input id="string" id="color" name="color" [(ngModel)]="producto.nombre"><br>
+<label for="velocidad">Cantidad: </label>
+<input type="number" id="velocidad" name="velocidad" [(ngModel)]="producto.cantidad"><br>
+<label for="piñones">Precio: </label>
+<input type="number"id="piñones" name="piñones"[(ngModel)]="producto.precio"><br>
+<label for="platos">Tipo: </label><br>
+<select name="" id=""[(ngModel)]="tp">
+<option value="Alimentos">ALIMENTOS</option>
+<option value="Alimentos_Perecedereos" >
+ALIMENTOS PERECEDEROS
+</option>
+<option value="Limpieza" >LIMPIEZA</option>
+<option value="Tecnologia">TECNOLOGIA</option>
+</select>
+
+<input type="submit" value="subir" (click)="anadir()">
+<app-componente1-hijoprocudto [alimentos]="productos"></app-componente1-hijoprocudto>
